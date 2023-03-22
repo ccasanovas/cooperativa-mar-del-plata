@@ -94,13 +94,16 @@ workflows:
           agvtool new-version -all $NEXT_BUILD_NUMBER
       - name: Set up code signing settings on Xcode project
         script: |
-          xcode-project use-profiles
+          xcode-project use-profiles --custom-export-options '{"teamID": "LTWKRS8WF9"}'
       - name: Set Capabilities
         script: |
           CP App.entitlements ios/App/App/
           chmod 777 setCapabilities.rb
           chmod 777 ios/App/App/App.entitlements
           ruby setCapabilities.rb "App"
+      - name: Execute cordova res for splashs and icon
+        script: |
+          npm run resources
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME" --verbose
