@@ -63,7 +63,7 @@ workflows:
       - name: Change Version
         script: |
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number $APP_STORE_APP_ID)
-          NEXT_BUILD_NUMBER=11
+          NEXT_BUILD_NUMBER=12
           plutil -replace CFBundleShortVersionString -string $NEXT_BUILD_NUMBER ios/App/App/Info.plist
       - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
         script: |
@@ -89,7 +89,7 @@ workflows:
           cd $FCI_BUILD_DIR/ios/App
           # agvtool new-version -all $(($BUILD_NUMBER +2))
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number $APP_STORE_APP_ID)
-          NEXT_BUILD_NUMBER=2.0
+          NEXT_BUILD_NUMBER=3.0
           agvtool new-version -all $NEXT_BUILD_NUMBER
       - name: Set up code signing settings on Xcode project
         script: |

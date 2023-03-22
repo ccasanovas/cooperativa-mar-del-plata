@@ -4,7 +4,7 @@
         <router-view/>
 
         <site-footer copyright="2022 siwca"/>
-       
+
     </div>
 </template>
 
@@ -224,7 +224,7 @@ if (isPushNotificationsAvailable) {
                     // iOS will prompt user and return if they granted permission or not
                     // Android and web will just grant without prompting
                     PushNotifications.requestPermissions().then((result) => {
-                        alert(`Resultado ${JSON.stringify(result)}`);
+                        console.log(`Resultado ${JSON.stringify(result)}`);
                     });
                 }
                 // Add registration error if there are.
