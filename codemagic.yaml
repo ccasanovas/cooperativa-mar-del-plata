@@ -11,10 +11,10 @@ workflows:
         XCODE_WORKSPACE: "ios/App/App.xcworkspace"
         XCODE_XCODEPROJ: "ios/App/App.xcodeproj"
         XCODE_SCHEME: "App"
-        APP_STORE_APP_ID: 6446605700
+        APP_STORE_APP_ID: 1624140045
       node: 12.18.4
-      xcode: 13.3
-      cocoapods: 1.11.3
+      xcode: latest
+      cocoapods: default
     triggering:
       events:
         - push
@@ -63,7 +63,7 @@ workflows:
       - name: Change Version
         script: |
           LATEST_BUILD_NUMBER=$(app-store-connect get-latest-testflight-build-number $APP_STORE_APP_ID)
-          NEXT_BUILD_NUMBER=1
+          NEXT_BUILD_NUMBER=10
           plutil -replace CFBundleShortVersionString -string $NEXT_BUILD_NUMBER ios/App/App/Info.plist
       - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
         script: |
@@ -94,16 +94,13 @@ workflows:
           agvtool new-version -all $NEXT_BUILD_NUMBER
       - name: Set up code signing settings on Xcode project
         script: |
-          xcode-project use-profiles --custom-export-options '{"teamID": "LTWKRS8WF9"}'
+          xcode-project use-profiles  --custom-export-options '{"teamID": "LTWKRS8WF9"}'
       - name: Set Capabilities
         script: |
           CP App.entitlements ios/App/App/
           chmod 777 setCapabilities.rb
           chmod 777 ios/App/App/App.entitlements
           ruby setCapabilities.rb "App"
-      - name: Execute cordova res for splashs and icon
-        script: |
-          npm run resources
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa --workspace "$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME" --verbose
