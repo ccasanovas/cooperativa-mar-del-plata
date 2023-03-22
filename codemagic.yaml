@@ -29,6 +29,9 @@ workflows:
       - name: Install npm dependencies for Ionic project
         script: |
           npm install && npm run build:prod
+      - name: Delete old ios folder
+        script: |
+          rm -rf ios
       - name: Update dependencies and copy web assets to native project
         script: |
           # npx cap copy # <- use this is you don't need to update native dependencies
