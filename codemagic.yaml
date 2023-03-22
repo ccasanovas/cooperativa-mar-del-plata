@@ -12,7 +12,7 @@ workflows:
         XCODE_XCODEPROJ: "ios/App/App.xcodeproj"
         XCODE_SCHEME: "App"
         APP_STORE_APP_ID: 6446605700
-      node: 12.18.4
+      node: 14.17.0
       xcode: 13.3
       cocoapods: 1.11.3
     triggering:
@@ -25,7 +25,7 @@ workflows:
     scripts:
       - name: Install cordova res for splashs and icon
         script: |
-          npm install -g cordova-res --unsafe-perm && npm rebuild node-sass
+          npm install capacitor-resources -g
       - name: Install npm dependencies for Ionic project
         script: |
           npm install && npm run build:prod
