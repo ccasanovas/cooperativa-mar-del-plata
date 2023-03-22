@@ -2,7 +2,7 @@ workflows:
   ionic-capacitor-ios-workflow:
     name: Ionic Capacitor iOS Workflow
     max_build_duration: 120
-    instance_type: mac_mini
+    instance_type: mac_mini_m1
     environment:
       groups:
         - app_store_credentials # <-- (Includes APP_STORE_CONNECT_ISSUER_ID, APP_STORE_CONNECT_KEY_IDENTIFIER, APP_STORE_CONNECT_PRIVATE_KEY)
@@ -13,8 +13,8 @@ workflows:
         XCODE_SCHEME: "App"
         APP_STORE_APP_ID: 6446605700
       node: 12.18.4
-      xcode: latest
-      cocoapods: default
+      xcode: 13.3
+      cocoapods: 1.11.3
     triggering:
       events:
         - push
@@ -25,7 +25,7 @@ workflows:
     scripts:
       - name: Install cordova res for splashs and icon
         script: |
-          npm install -g cordova-res --unsafe-perm && npm rebuild node-sass
+          npm install capacitor-resources -g
       - name: Install npm dependencies for Ionic project
         script: |
           npm install && npm run build:prod
@@ -35,7 +35,7 @@ workflows:
           npx cap add ios # <- update native dependencies and copy web assets to native project
       - name: Execute cordova res for splashs and icon
         script: |
-          cordova-res ios --skip-config --copy
+          npm run resources
       - name: Add Plist Permissions Camera
         script: |
           plutil -insert NSCameraUsageDescription -string "We require access to the camera to use it to upload payment notification attachments and documentation in communication with the service provider." ios/App/App/Info.plist
