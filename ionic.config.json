@@ -1,8 +1,22 @@
 {
-  "name": "Cooperativa de servicios Mar del Plata",
-  "integrations": {
-    "capacitor": {}
+  "appId": "ar.com.coope.cooperativas.mardelplata",
+  "appName": "IDATA Copropietarios",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist",
+  "cordova": {},
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    },
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
   },
-  "type": "vue",
-  "dev_push": true
+
+  "server": {
+    "allowNavigation": [
+      "*"
+    ]
+  }
 }

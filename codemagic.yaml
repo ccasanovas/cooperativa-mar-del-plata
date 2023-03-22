@@ -74,8 +74,7 @@ workflows:
       #    echo "Saved provisioning profile $PROFILE_PATH"
       - name: Fetch signing files
         script: |
-          # app-store-connect fetch-signing-files "com.nevercode.ncionicapp" --type IOS_APP_STORE --create
-          app-store-connect fetch-signing-files "ar.com.coope.cooperativas.mardelplata" --type IOS_APP_STORE --create --strict-match-identifier
+          app-store-connect fetch-signing-files "ar.com.coope.cooperativas.mardelplata" --type IOS_APP_STORE --create
       - name: Add certificates
         script: |
           keychain add-certificates
@@ -91,7 +90,7 @@ workflows:
           agvtool new-version -all $NEXT_BUILD_NUMBER
       - name: Set up code signing settings on Xcode project
         script: |
-          xcode-project use-profiles --custom-export-options '{"teamID": "LTWKRS8WF9"}'
+          xcode-project use-profiles
       - name: Set Capabilities
         script: |
           CP App.entitlements ios/App/App/

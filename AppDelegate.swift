@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let options = FirebaseOptions(googleAppID: "1:576374877660:ios:b9d20f8483901df05a3319", gcmSenderID: "576374877660")
         options.clientID = "576374877660-ekq1jhg12emadpvv50kp3sde83nm9hc8.apps.googleusercontent.com"
         options.apiKey = "AIzaSyC68aZUX0aPgdJE9dhLufLs5uCushRiMXY"
-        options.bundleID = "ar.com.siwca.coope.cooperativas.mardelplata"
+        options.bundleID = "ar.com.coope.cooperativas.mardelplata"
         options.storageBucket = "siwca-7bf54.appspot.com"
         options.databaseURL = "https://siwca-7bf54.firebaseio.com"
         options.projectID = "siwca-7bf54"
