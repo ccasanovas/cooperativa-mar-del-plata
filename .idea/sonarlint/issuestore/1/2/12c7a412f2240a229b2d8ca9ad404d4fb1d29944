@@ -1,0 +1,15 @@
+
+D	Web:S1827¥")Remove this deprecated "scope" attribute.(¿×ğ¼øÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeCheckX";Add either an 'id' or a 'scope' attribute to this <th> tag.(™À§ãÿÿÿÿÿ
+l Web:TableHeaderHasIdOrScopeChecka";Add either an 'id' or a 'scope' attribute to this <th> tag.(™À§ãÿÿÿÿÿ
+GWeb:ImgWithoutAltCheckz"%Add an "alt" attribute to this image.(¢äƒ¼
+?	Web:S1827¤")Remove this deprecated "scope" attribute.(í¨•
+Zjavascript:S1854Ê"6Remove this useless assignment to variable "mimetype".(˜Ãï8Âùõí/
+yjavascript:S2703˜"\Add the "let", "const" or "var" keyword to this declaration of "urlNew" to make it explicit.(›¨Ë¡
+m Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(é¯„ˆûÿÿÿÿ
+g Web:TableHeaderHasIdOrScopeCheck";Add either an 'id' or a 'scope' attribute to this <th> tag.(’ŒÛ8
+fjavascript:UnusedVariableÊ"9Remove the declaration of the unused 'mimetype' variable.(˜Ãï8Âùõí/
+l Web:TableHeaderHasIdOrScopeCheckj";Add either an 'id' or a 'scope' attribute to this <th> tag.(™À§ãÿÿÿÿÿ
+yjavascript:S3923¥"]This conditional operation returns the same value whether the condition is "true" or "false".(•šœw
+MWeb:TableWithoutCaptionCheckV" Add a description to this table.(ÆÑÔ×ıÿÿÿÿ
+IWeb:TableWithoutCaptionCheckŒ" Add a description to this table.(ÿšŠ

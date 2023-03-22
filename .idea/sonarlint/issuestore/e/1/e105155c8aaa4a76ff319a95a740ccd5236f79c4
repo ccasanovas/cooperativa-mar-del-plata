@@ -1,0 +1,12 @@
+
+hjavascript:UnusedVariable"<Remove the declaration of the unused 'permissions' variable.(ŸİèJ8ç–Àùí/
+VWeb:AvoidCommentedOutCodeCheck¹"Remove this commented out code.(óÁÙ»øÿÿÿÿ8×êáà/
+Njavascript:S1117Í"+'e' is already declared in the upper scope.(¤Ói8áü‚î/
+fjavascript:S1788Ã"=Move parameter "type" after parameters without default value.(ğõ¦Ûşÿÿÿÿ8ç–Àùí/
+;javascript:S2814¡"'x' is already defined.(Éˆ¼Ò8áü‚î/
+>javascript:S108™"Empty block statement.(¸œÙÂıÿÿÿÿ8áü‚î/
+<javascript:S2814²"'frm' is already defined.(¤³­J8áü‚î/
+NWeb:ImgWithoutAltCheck°"%Add an "alt" attribute to this image.(¡õîc8Ùıõİ/
+\javascript:S1854"9Remove this useless assignment to variable "permissions".(ŸİèJ8ÆüÃâí/
+Tjavascript:S1854£"1Remove this useless assignment to variable "frm".(¤³­J8áü‚î/
+„javascript:S3923ë"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Ìîµıÿÿÿÿ8üëäƒî/

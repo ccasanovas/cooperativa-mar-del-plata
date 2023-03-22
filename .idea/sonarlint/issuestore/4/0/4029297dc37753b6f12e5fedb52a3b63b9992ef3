@@ -1,0 +1,6 @@
+
+IWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Ž€Ë»
+\javascript:S1854€"9Remove this useless assignment to variable "permissions".(ŸÝèJ8”ûýäí/
+Kjavascript:S1128È"'Remove this unused import of 'Browser'.(à‰¾­8«¶³åí/
+hjavascript:UnusedVariable€"<Remove the declaration of the unused 'permissions' variable.(ŸÝèJ8”ûýäí/
+JWeb:AvoidCommentedOutCodeCheckµ"Remove this commented out code.(ÞÕšÑ

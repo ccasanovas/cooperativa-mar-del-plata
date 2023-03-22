@@ -1,0 +1,1 @@
+webpackJsonp([3],{1260:function(e,n,s){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a=s(17);n.DialogWeb=class extends a.d{async alert(e){window.alert(e.message)}async prompt(e){const n=window.prompt(e.message,e.inputText||"");return{value:null!==n?n:"",cancelled:null===n}}async confirm(e){return{value:window.confirm(e.message)}}}}});

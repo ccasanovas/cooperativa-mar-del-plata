@@ -1,0 +1,37 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "ar.com.siwca.coope.cooperativas.mdp"
+    }
+  }
+}

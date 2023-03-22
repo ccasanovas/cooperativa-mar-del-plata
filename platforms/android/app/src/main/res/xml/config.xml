@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ar.com.siwca.coope.cooperativas.mdp" version="1.1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>IPR</name>
+    <description>
+        Instituto Cooperativa de servicios Sierra de los Padres
+    </description>
+    <author email="sistemas@siwca.com.ar" href="http://cordova.io">
+        SIWCA
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <icon density="mdpi" src="res/icon/android/mdpi.png" />
+    <icon density="hdpi" src="res/icon/android/hdpi.png" />
+    <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+    <icon density="xxhdpi" src="res/icon/android/xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+    <resource-file src="res/icon/android/notification/drawable-hdpi/ic_stat_notification.png" target="app/src/main/res/drawable-hdpi/notification_icon.png" />
+    <resource-file src="res/icon/android/notification/drawable-mdpi/ic_stat_notification.png" target="app/src/main/res/drawable-mdpi/notification_icon.png" />
+    <resource-file src="res/icon/android/notification/drawable-xhdpi/ic_stat_notification.png" target="app/src/main/res/drawable-xhdpi/notification_icon.png" />
+    <resource-file src="res/icon/android/notification/drawable-xxhdpi/ic_stat_notification.png" target="app/src/main/res/drawable-xxhdpi/notification_icon.png" />
+    <resource-file src="res/icon/android/notification/drawable-xxxhdpi/ic_stat_notification.png" target="app/src/main/res/drawable-xxxhdpi/notification_icon.png" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+</widget>
