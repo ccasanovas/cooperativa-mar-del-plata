@@ -18,7 +18,8 @@
     "coverage": "jest --coverage",
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
-    "test": "jest --verbose test/"
+    "test": "jest --verbose test/",
+    "resources": "capacitor-resources -p ios"
   },
   "dependencies": {
     "@capacitor-community/fcm": "^2.0.2",
